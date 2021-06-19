@@ -28,6 +28,7 @@ def init():
     get_logger()
     init_db()
     web.run_app(init_app(), port=8000)
+    logging.info('start serving')
 
 
 if __name__ == '__main__':
